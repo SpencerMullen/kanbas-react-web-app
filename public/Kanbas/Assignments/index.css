@@ -1,0 +1,23 @@
+.assignmentGroup {
+    margin: 10px 0px;
+}
+
+.assignmentGroupIcon {
+    padding: 5px 5px;
+}
+
+.assignmentGroupTitle {
+    padding: 5px 5px;
+    /* title and bigger font size and bold */
+    font-weight:bold;
+    font-size: 20px;
+}
+
+.assignmentTitle {
+
+}
+
+.assignmentGroup li a {
+    text-decoration: none;
+    color: #000;
+}

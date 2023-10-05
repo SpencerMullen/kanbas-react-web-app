@@ -1,0 +1,35 @@
+.modules li {
+    text-decoration: none;
+}
+
+.homeCheckmark {
+    color: #008000;
+}
+
+.fa-check-circle {
+    color: #008000;
+}
+
+.homeLink {
+    text-decoration: none;
+    color: #ff0000;
+}
+
+.homeLink2 {
+    text-decoration: none;
+    color: #000;
+}
+
+.homeThirdColumn {
+    margin-left:100px;
+}
+
+.homeThirdColumnList li {
+    list-style-type: none;
+}
+
+.homeThirdColumnList li a {
+    text-decoration: none;
+    color:#000;
+}
+

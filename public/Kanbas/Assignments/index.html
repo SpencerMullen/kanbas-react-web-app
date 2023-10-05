@@ -1,210 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/8978261a63.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../navBar.css">
+  <link rel="stylesheet" href="../sidebar.css">
+  <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <table border="0" width="100%">
-        <tr>
-          <td valign="top">
-            <ul>
-              <!-- <li><a href="#">Northeastern</a></li> -->
-              <li><a href="../Navigation/account.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="../Navigation/courses.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </td>
-          <td valign="top">
-            <ul>
-              <li><a href="../Home/index.html">Home</a></li>
-              <li><a href="#">Modules</a></li>
-              <li><a href="#">Piazza</a></li>
-              <li><a href="#">Zoom Meetings</a></li>
-              <li><a href="../Assignments/index.html">Assignments</a></li>
-              <li><a href="#">Quizzes</a></li>
-              <li><a href="../Grades/index.html">Grades</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">Panopto Video</a></li>
-              <li><a href="#">Discussions</a></li>
-              <li><a href="#">Announcements</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Rubrics</a></li>
-              <li><a href="#">Outcomes</a></li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="#">Settings</a></li>
-              </ul>
-          </td>
-          <td valign="top">
-                <input value = "" placeholder = "Search for Assignments">
-                <button>Group</button>
-                <button>Assignment</button>
-                <select>
-                  <option value = "EDITDATE">Edit Assignment Dates</option>
-                  <option value = "GROUP">Assignment Groups Weight</option>
-                  <option value = "GRADESCOPE">Gradescope 1.3</option>
-                  <option value = "COMMONS">Commons Favorite</option>
-                </select>
-                <br>
-                <br>
-                <table border="0">
-                  <td>
-                    <h2>ASSIGNMENTS 40% of Total</h2>
-                  </td>
-                  <td>
-                    <select>
-                      <option value = "EDIT">Edit</option>
-                      <option value = "SPEED">Speed Grader</option>
-                      <option value = "DUPLICATE">Duplicate</option>
-                      <option value = "DELETE">Delete</option>
-                      <option value = "MOVETO">Move To...</option>
-                      <option value = "SENDTO">Send To...</option>
-                      <option value = "COPYTO">Copy To...</option>
-                      <option value = "SHARE">Share to Commons</option>
-                    </select>
-                  </td>
-                </table>
-                <ul>
-                  <li>
-                    <a href="./edit.html">A1 - ENV + HTML</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                  <li>
-                    <a href="./edit.html">A2 - CSS + BOOTSTRAP</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                  <li>
-                    <a href="./edit.html">A3 - JS + REACT</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                  <li>
-                    <a href="./edit.html">A4 - STATE + REDUX</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                  <li>
-                    <a href="./edit.html">A5 - NODE + SESSION</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                  <li>
-                    <a href="./edit.html">A6 - MONGO + MONGOOSE</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                </ul>
+  <table border="0" width="auto">
+    <tr>
+      <td valign="top">
+        <ul class="navBar">
+          <li><a href="#" class="navBarItem"><i class="fa-solid fa-n fa-2xl navBarNIcon navBarOtherIcons"></i></a>
+          </li>
+          <li><a href="../Profile/index.html" class="navBarItem">
+              <i class="fa-regular fa-user navBarAccountIcon"></i>
+              <br>
+              Account
+            </a></li>
+          <li><a href="../Dashboard/index.html" class="navBarItem">
+              <i class="fa-solid fa-gauge navBarOtherIcons"></i>
+              <br>
+              Dashboard
+            </a></li>
+          <li><a href="../Home/index.html" class="navBarItem navBarSelected">
+              <i class="fa-solid fa-book navBarOtherIcons"></i>
+              <br>
+              Courses
+            </a></li>
+          <li><a href="#" class="navBarItem">
+              <i class="fa-solid fa-calendar navBarOtherIcons"></i>
+              <br>
+              Calendar
+            </a></li>
+          <li><a href="#" class="navBarItem">
+              <i class="fa-solid fa-inbox navBarOtherIcons"></i>
+              <br>
+              Inbox
+            </a></li>
+          <li><a href="#" class="navBarItem">
+              <i class="fa-solid fa-history navBarOtherIcons"></i>
+              <br>
+              History
+            </a></li>
+          <li><a href="#" class="navBarItem">
+              <i class="fa-solid fa-laptop-code navBarOtherIcons"></i>
+              <br>
+              Studio
+            </a></li>
+          <li><a href="#" class="navBarItem">
+              <i class="fa-solid fa-share navBarOtherIcons"></i>
+              <br>
+              Commons
+            </a></li>
+          <li><a href="#" class="navBarItem">
+              <i class="fa-solid fa-question-circle navBarOtherIcons"></i>
+              <br>
+              Help
+            </a></li>
+        </ul>
+      </td>
+      <td valign="top">
+        <ul class="sidebar homesidebar">
+          <li><a href="../Home/index.html" class="sidebarItem">Home</a></li>
+          <li><a href="#" class="sidebarItem">Modules</a></li>
+          <li><a href="#" class="sidebarItem">Piazza</a></li>
+          <li><a href="#" class="sidebarItem">Zoom Meetings</a></li>
+          <li><a href="../Assignments/index.html" class="sidebarItem sidebarSelected">Assignments</a></li>
+          <li><a href="#" class="sidebarItem">Quizzes</a></li>
+          <li><a href="../Grades/index.html" class="sidebarItem">Grades</a></li>
+          <li><a href="#" class="sidebarItem">People</a></li>
+          <li><a href="#" class="sidebarItem">Panopto Video</a></li>
+          <li><a href="#" class="sidebarItem">Discussions</a></li>
+          <li><a href="#" class="sidebarItem">Announcements</a></li>
+          <li><a href="#" class="sidebarItem">Pages</a></li>
+          <li><a href="#" class="sidebarItem">Files</a></li>
+          <li><a href="#" class="sidebarItem">Rubrics</a></li>
+          <li><a href="#" class="sidebarItem">Outcomes</a></li>
+          <li><a href="#" class="sidebarItem">Collaborations</a></li>
+          <li><a href="#" class="sidebarItem">Syllabus</a></li>
+          <li><a href="#" class="sidebarItem">Settings</a></li>
+        </ul>
+      </td>
+      <td valign="top" width="700px">
+        <br>
+        <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">CS4550.12631.202410</li>
+            <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+          </ol>
+        </nav>
+        <input value="" placeholder="Search for Assignments">
+        <button class="btn btn-danger float-end">
+          <i class="fa-solid fa-plus"></i>
+          Assignment</button>
+        <button class="btn btn-secondary float-end">
+          <i class="fa-solid fa-plus"></i>
+          Group</button>
+        <br>
+        <br>
+        <ul class="list-group assignmentGroup">
+          <li class="list-group-item assignmentGroupTitle list-group-item-secondary">Assignments
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-plus float-end assignmentGroupIcon"></i>
+            <span class="float-end">40% of Total</span>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html" class="assignmentTitle">A1 - ENV + HTML</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">A2 - CSS + BOOTSTRAP</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">A3 - JS + REACT</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">A4 - STATE + REDUX</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">A5 - NODE + SESSION</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">A6 - MONGO + MONGOOSE</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+        </ul>
 
-                <table border="0">
-                  <td>
-                    <h2>QUIZZES 10% of Total</h2>
-                  </td>
-                  <td>
-                    <select>
-                      <option value = "EDIT">Edit</option>
-                      <option value = "SPEED">Speed Grader</option>
-                      <option value = "DUPLICATE">Duplicate</option>
-                      <option value = "DELETE">Delete</option>
-                      <option value = "MOVETO">Move To...</option>
-                      <option value = "SENDTO">Send To...</option>
-                      <option value = "COPYTO">Copy To...</option>
-                      <option value = "SHARE">Share to Commons</option>
-                    </select>
-                  </td>
-                </table>
-                <ul>
-                  <li>
-                    <a href="./edit.html">Q1 - HTML</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                  <li>
-                    <a href="./edit.html">Q2 - CSS</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                  <li>
-                    <a href="./edit.html">Q3 - JS, ES6</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                  <li>
-                    <a href="./edit.html">Q4 - NODE</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                  <li>
-                    <a href="./edit.html">Q5 - MONGO</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                </ul>
+        <ul class="list-group assignmentGroup">
+          <li class="list-group-item assignmentGroupTitle list-group-item-secondary">Quizzes
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-plus float-end assignmentGroupIcon"></i>
+            <span class="float-end">10% of Total</span>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">Q1 - HTML</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">Q2 - CSS</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">Q3 - JS, ES6</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">Q4 - NODE</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">Q5 - MONGO</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+        </ul>
 
-                <table border="0">
-                  <td>
-                    <h2>EXAMS 20% of Total</h2>
-                  </td>
-                  <td>
-                    <select>
-                      <option value = "EDIT">Edit</option>
-                      <option value = "SPEED">Speed Grader</option>
-                      <option value = "DUPLICATE">Duplicate</option>
-                      <option value = "DELETE">Delete</option>
-                      <option value = "MOVETO">Move To...</option>
-                      <option value = "SENDTO">Send To...</option>
-                      <option value = "COPYTO">Copy To...</option>
-                      <option value = "SHARE">Share to Commons</option>
-                    </select>
-                  </td>
-                </table>
-                <ul>
-                  <li>
-                    <a href="./edit.html">Midterm</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                  <li>
-                    <a href="./edit.html">Final</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                </ul>
+        <ul class="list-group assignmentGroup">
+          <li class="list-group-item assignmentGroupTitle">Exams
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-plus float-end assignmentGroupIcon"></i>
+            <span class="float-end">20% of Total</span>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">Midterm</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">Final</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+        </ul>
 
-                <table border="0">
-                  <td>
-                    <h2>PROJECT 30% of Total</h2>
-                  </td>
-                  <td>
-                    <select>
-                      <option value = "EDIT">Edit</option>
-                      <option value = "SPEED">Speed Grader</option>
-                      <option value = "DUPLICATE">Duplicate</option>
-                      <option value = "DELETE">Delete</option>
-                      <option value = "MOVETO">Move To...</option>
-                      <option value = "SENDTO">Send To...</option>
-                      <option value = "COPYTO">Copy To...</option>
-                      <option value = "SHARE">Share to Commons</option>
-                    </select>
-                  </td>
-                </table>
-                <ul>
-                  <li>
-                    <a href="./edit.html">Project</a>
-                    <br>
-                    <a href="#">Multiple Modules</a> | Not available yet
-                  </li>
-                </ul>
-          </td>
+        <ul class="list-group assignmentGroup">
+          <li class="list-group-item assignmentGroupTitle list-group-item-secondary">Project
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-plus float-end assignmentGroupIcon"></i>
+            <span class="float-end">30% of Total</span>
+          </li>
+          <li class="list-group-item">
+            <a href="./edit.html">Project</a>
+            <br>
+            <i class="fa-solid fa-book"></i>
+            <a href="#">Multiple Modules</a> | Not available yet
+            <i class="fa-solid fa-ellipsis-vertical float-end assignmentGroupIcon"></i>
+            <i class="fa-solid fa-circle-check homeCheckmark float-end assignmentGroupIcon"></i>
+          </li>
+        </ul>
+      </td>
 </body>
+
 </html>

@@ -1,0 +1,62 @@
+.navBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 85px;
+    height: 100%;
+}
+
+.navBarItem {
+    display: inline-block;
+    padding: 10px 5px;
+    margin: 10px 0px;
+    border-radius: 0px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: 75px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.navBarSelected {
+    color: #ff0000;
+    background-color: #fff;
+}
+
+.navBar li {
+    list-style-type: none;
+    align-items: center;
+}
+
+.navBarNIcon {
+    size: 120px;
+}
+
+.navBarAccountIcon {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.navBarSelected .navBarAccountIcon {
+    color: #000;
+}
+
+.navBarOtherIcons {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #ff0000;
+}
