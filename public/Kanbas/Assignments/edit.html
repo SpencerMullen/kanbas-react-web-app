@@ -164,15 +164,28 @@
                     </div>
                     <br>
 
-                    <label>Submission Attempts</label><br>
-                    <select>
-                        <option selected value="UNLIMITED">Unlimited</option>
-                    </select><br><br>
+                    <div class="row">
+                        <div class="col">
+                            <label>Submission Attempts</label><br>
+                        </div>
+                        <div class="col">
+                            <select>
+                                <option selected value="UNLIMITED">Unlimited</option>
+                            </select><br><br>
+                        </div>
+                    </div>
 
-                    <label>Plagiarism Review</label><br>
-                    <select>
-                        <option selected value="NONE">None</option>
-                    </select><br><br>
+                    <div class="row">
+                        <div class="col">
+                            <label>Plagiarism Review</label><br>
+                        </div>
+                        <div class="col">
+                            <select>
+                                <option selected value="NONE">None</option>
+                            </select><br><br>
+                        </div>
+                    </div>
+                    
 
                     <label>Group Assignment</label><br>
                     <input type="checkbox" value="GROUP" name="Group" id="chkbox-group" />
@@ -193,8 +206,9 @@
                     <label>Until</label><br>
                     <input type="date" value="2023-01-01" placeholder="2023-01-01"><br><br>
 
-                    <button onclick="window.location.href='./index.html'" class="btn btn-secondary">Cancel</button>
-                    <button onclick="window.location.href='./index.html'" class="btn btn-danger">Save</button>
+                    <button onclick="window.location.href='./index.html'" class="btn btn-danger float-end">Save</button>
+                    <button onclick="window.location.href='./index.html'"
+                        class="btn btn-secondary float-end">Cancel</button>
                 </div>
             </td>
 </body>
