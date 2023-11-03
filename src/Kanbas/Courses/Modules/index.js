@@ -1,4 +1,5 @@
 import ModuleList from "./ModuleList";
+import React from "react";
 function Modules() {
   return (
     <div>

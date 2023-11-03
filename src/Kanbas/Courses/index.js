@@ -9,11 +9,11 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import "./index.css"
 
-function Courses() {
+function Courses({ courses }) {
     const { courseId } = useParams();
     const { pathname } = useLocation();
     const pageName = pathname.split("/").pop();
-    const course = db.courses.find((course) => course._id === courseId);
+    const course = courses.find((course) => course._id === courseId);
     return (
         <div className="d-flex">
             <div className="col">
