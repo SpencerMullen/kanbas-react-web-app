@@ -11,7 +11,7 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
             <div className="card">
                 <div className="card-body">
                     <div className="col">
-                        <div className="bg-secondary card-img-top" style={{ width: 200, height: 150 }}></div>
+                        <div className="bg-primary card-img-top" style={{ width: 200, height: 150 }}></div>
                         <div className="d-flex flex-column">
                             <h5 className="card-title">{course.name}</h5>
                             <h6 className="card-subtitle mb-2 text-muted">{course.number}</h6>
