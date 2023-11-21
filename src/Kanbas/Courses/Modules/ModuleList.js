@@ -1,28 +1,49 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import db from "../../Database";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   addModule,
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
+import * as client from "./client";
 
 function ModuleList() {
   const { courseId } = useParams();
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+  useEffect(() => {
+    client.findModulesForCourse(courseId)
+      .then((modules) =>
+        dispatch(setModules(modules))
+      );
+  }, [courseId]);
+  const handleAddModule = () => {
+    client.createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
 
   return (
     <ul className="list-group">
       <li className="list-group-item">
-        <button onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+        <button onClick={handleAddModule}
           className="btn btn-secondary">
           Add</button>
-        <button onClick={() => dispatch(updateModule(module))}
+        <button onClick={handleUpdateModule}
           className="btn btn-secondary">
           Update
         </button>
@@ -45,7 +66,7 @@ function ModuleList() {
               </button>
 
               <button className="btn btn-danger"
-                onClick={() => dispatch(deleteModule(module._id))}>
+                onClick={() => handleDeleteModule(module._id)}>
                 Delete
               </button>
 

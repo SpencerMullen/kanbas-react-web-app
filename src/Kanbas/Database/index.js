@@ -1,4 +1,4 @@
-import courses from "./courses.json";
+/*import courses from "./courses.json";
 import modules from "./modules.json";
 import assignments from "./assignments.json";
 import users from "./users.json";
@@ -13,3 +13,4 @@ export default {
     enrollments,
     grades,
 };
+*/

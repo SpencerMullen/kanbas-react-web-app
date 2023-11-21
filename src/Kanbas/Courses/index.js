@@ -1,4 +1,3 @@
-import db from "../../Kanbas/Database";
 import { useParams, Routes, Route, Navigate } from "react-router-dom";
 import { useLocation } from "react-router";
 import CourseNavigation from "./CourseNavigation";
@@ -8,12 +7,25 @@ import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import "./index.css"
+import { useEffect, useState } from "react";
+import axios from "axios";
 
-function Courses({ courses }) {
+function Courses() {
     const { courseId } = useParams();
+    const URL = "http://localhost:4000/api/courses";
+    const [course, setCourse] = useState({});
+    const findCourseById = async (courseId) => {
+        const response = await axios.get(
+            `${URL}/${courseId}`
+        );
+        setCourse(response.data);
+    };
     const { pathname } = useLocation();
     const pageName = pathname.split("/").pop();
-    const course = courses.find((course) => course._id === courseId);
+    // const course = courses.find((course) => course._id === courseId);
+    useEffect(() => {
+        findCourseById(courseId);
+    }, [courseId]);
     return (
         <div className="d-flex">
             <div className="col">
