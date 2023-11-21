@@ -10,7 +10,8 @@ import { useEffect } from "react";
 
 function Kanbas() {
    const [courses, setCourses] = useState([]);
-   const URL = "http://localhost:4000/api/courses";
+   // const URL = "http://localhost:4000/api/courses";
+   const URL = "https://kanbas-react-web-app-qy2j.onrender.com/api/courses";
    const findAllCourses = async () => {
       const response = await axios.get(URL);
       setCourses(response.data);
@@ -35,7 +36,7 @@ function Kanbas() {
       const response = await axios.delete(
          `${URL}/${course._id}`
        );   
-      setCourses(courses.filter((course) => course._id.$oid !== courseId));
+      setCourses(courses.filter((course) => course._id !== courseId));
    };
    const updateCourse = async () => {
       const response = await axios.put(
