@@ -1,0 +1,33 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    height: 100%;
+}
+
+.sidebarItem {
+    display: inline-block;
+    margin: 5px 0px;
+    border-radius: 0px;
+    background-color: #fff;
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.sidebarSelected {
+    color: #000;
+    border-left: #000 5px solid;
+    padding-left: 10px;
+}
+

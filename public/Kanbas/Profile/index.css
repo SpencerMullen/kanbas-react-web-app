@@ -1,0 +1,23 @@
+.topLabel {
+    font-size: 25px;
+    margin: 15px;
+    background-color: #fff;
+    width: 800px;
+    height: 50px;
+    padding-bottom:20px;
+    align-items: center;
+    border-bottom: #000 2px solid;
+
+}
+
+.topLabel label {
+    margin-left: 25px;
+}
+
+.cancelEditingButton {
+    margin-top: 200px;
+}
+
+.bottomButtons {
+    margin-right: 200px;
+}

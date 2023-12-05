@@ -1,80 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8978261a63.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../navBar.css">
+    <link rel="stylesheet" href="../sidebar.css">
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
-    <table border="0" width="100%">
+    <table border="0" width="auto">
         <tr>
-          <td valign="top">
-            <ul>
-              <!-- <li><a href="#">Northeastern</a></li> -->
-              <li><a href="../Navigation/account.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="../Navigation/courses.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </td>
-          <td valign="top">
-            <ul>
-              <li><a href="#">Notifications</a></li>
-              <li><a href="../Profile/index.html">Profile</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Settings</a></li>
-              <li><a href="#">ePortfolios</a></li>
-              <li><a href="#">Shared Content</a></li>
-              <li><a href="#">The Hub</a></li>
-              <li><a href="#">Qwickly Course Tools</a></li>
-              <li><a href="#">Global Announcements</a></li>
-              </ul>
-          </td>
-          <td>
-            <h2>Jose Annunziato</h2>
-            <label>Name:*</label>
-            <input type="text" id="name" name="name" value="Jose Annunziato">
-            <label>Pronouns</label>
-            <select>
-                <option value="None">None</option>
-            </select><br><br>
-            <label>Title: </label>
-            <input type="text" id="title" name="title">
-            <br><br>
-            <h3>Contact</h3>
-            <p>No registered services, you can add some on the <a href = "#">settings</a> page.</p>
-            <h3>Biography</h3>
-            <textarea cols="50" rows="5">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
-            <h3>Links</h3>
-            <table border = "0">
-                <thead>
+            <td valign="top">
+                <ul class="navBar">
+                    <li><a href="#" class="navBarItem"><i
+                                class="fa-solid fa-n fa-2xl navBarNIcon navBarOtherIcons"></i></a></li>
+                    <li><a href="../Profile/index.html" class="navBarItem navBarSelected">
+                            <i class="fa-regular fa-user navBarAccountIcon"></i>
+                            <br>
+                            Account
+                        </a></li>
+                    <li><a href="../Dashboard/index.html" class="navBarItem">
+                            <i class="fa-solid fa-gauge navBarOtherIcons"></i>
+                            <br>
+                            Dashboard
+                        </a></li>
+                    <li><a href="../Home/index.html" class="navBarItem">
+                            <i class="fa-solid fa-book navBarOtherIcons"></i>
+                            <br>
+                            Courses
+                        </a></li>
+                    <li><a href="#" class="navBarItem">
+                            <i class="fa-solid fa-calendar navBarOtherIcons"></i>
+                            <br>
+                            Calendar
+                        </a></li>
+                    <li><a href="#" class="navBarItem">
+                            <i class="fa-solid fa-inbox navBarOtherIcons"></i>
+                            <br>
+                            Inbox
+                        </a></li>
+                    <li><a href="#" class="navBarItem">
+                            <i class="fa-solid fa-history navBarOtherIcons"></i>
+                            <br>
+                            History
+                        </a></li>
+                    <li><a href="#" class="navBarItem">
+                            <i class="fa-solid fa-laptop-code navBarOtherIcons"></i>
+                            <br>
+                            Studio
+                        </a></li>
+                    <li><a href="#" class="navBarItem">
+                            <i class="fa-solid fa-share navBarOtherIcons"></i>
+                            <br>
+                            Commons
+                        </a></li>
+                    <li><a href="#" class="navBarItem">
+                            <i class="fa-solid fa-question-circle navBarOtherIcons"></i>
+                            <br>
+                            Help
+                        </a></li>
+                </ul>
+            </td>
+            <td valign="top">
+                <ul class="sidebar">
+                    <li><a href="#" class="sidebarItem">
+                            Notifications
+                        </a></li>
+                    <li><a href="../Profile/index.html" class="sidebarItem sidebarSelected">
+                            Profile
+                        </a></li>
+                    <li><a href="#" class="sidebarItem">
+                            Files
+                        </a></li>
+                    <li><a href="#" class="sidebarItem">
+                            Settings
+                        </a></li>
+                    <li><a href="#" class="sidebarItem">
+                            ePortfolios
+                        </a></li>
+                    <li><a href="#" class="sidebarItem">
+                            Shared Content
+                        </a></li>
+                    <li><a href="#" class="sidebarItem">
+                            The Hub
+                        </a></li>
+                    <li><a href="#" class="sidebarItem">
+                            Qwickly Course Tools
+                        </a></li>
+                    <li><a href="#" class="sidebarItem">
+                            Global Announcements
+                        </a></li>
+                </ul>
+            </td>
+            <td valign="top">
+                <div class="topLabel">
+                    <i class="fa-solid fa-bars fa-xl"></i>
+                    <label>Jose Annunziato's Profile</label>
+                </div>
+                <br><br>
+                <i class="fa-regular fa-user fa-9x"></i>
+                <br><br>
+                <h2>Jose Annunziato</h2>
+                <label>Name:*</label><br>
+                <input type="text" id="name" name="name" value="Jose Annunziato" class="form-control w-50">
+                <br>
+                <label>Pronouns</label><br>
+                <select>
+                    <option value="None">None</option>
+                </select><br><br>
+                <label>Title: </label><br>
+                <input type="text" id="title" name="title" class="form-control w-50">
+                <br><br>
+                <h3>Contact</h3>
+                <p>No registered services, you can add some on the <a href="#">settings</a> page.</p>
+                <h3>Biography</h3>
+                <textarea cols="50" rows="5"
+                    class="form-control w-50">Faculty, Software Engineer, AI, Space, and renewables enthusiast.</textarea>
+                <h3>Links</h3>
+                <div class="container text-left">
+                    <div class="row">
+                        <div class="col">
+                            <label>Title</label><br>
+                            <input type="text" id="title" name="title" class="form-control w-75" value="YouTube">
+                        </div>
+                        <div class="col">
+                            <label>URL</label><br>
+                            <input type="text" id="url" name="url" class="form-control w-75"
+                                value="https://www.youtube.com/@WebDevTV">
+                        </div>
+                        <div class="col">
+                            <!-- x icon color red -->
+                            <br>
+                            <a href="#"><i class="fa-solid fa-x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <table border="0">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>URL</th>
+                        </tr>
+                    </thead>
                     <tr>
-                        <th>Title</th>
-                        <th>URL</th>
+                        <td><input value="YouTube"></td>
+                        <td><input value="https://www.youtube.com/@WebDevTV"></td>
+                        <td><a href="#">Remove</td>
                     </tr>
-                </thead>
-                 <tr>
-                    <td><input value = "YouTube"></td>
-                    <td><input value = "https://www.youtube.com/"></td>
-                    <td><a href="#">Remove</td>
-                </tr>
-            </table>
-            <br>
-            <button>Add another link</button>
-            <br>
-            <button >Cancel</button>
-            <button onclick="window.location.href='./index.html'">Save Profile</button>
-            <br>
-            <button>Edit Profile</button>
-            <button onclick="window.location.href='./index.html'">Cancel Editing</button>
-        </td>
+                </table> -->
+                <button class="btn btn-secondary">Add another link</button>
+                <br><br>
+                <div class="float-end bottomButtons">
+                    <button onclick="window.location.href='./index.html'" class="btn btn-secondary">Cancel</button>
+                    <button onclick="window.location.href='./index.html'" class="btn btn-danger">Save Profile</button>
+                </div>
+            </td>
+            <td valign="top">
+                <button onclick="window.location.href='./index.html'" class="btn btn-secondary cancelEditingButton">
+                    <i class="fa-solid fa-pencil"></i>
+                    Cancel Editing
+                </button>
+            </td>
         </tr>
     </table>
 
 </body>
+
 </html>
