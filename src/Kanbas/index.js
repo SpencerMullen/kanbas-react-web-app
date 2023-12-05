@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from "react-router";
 import KanbasNavigation from "./KanbasNavigation";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
+import Signin from "../Project/users/signin";
 import { useState } from "react";
 import store from "./store";
 import { Provider } from "react-redux";
@@ -33,13 +34,13 @@ function Kanbas() {
       ]);
    };
    const deleteCourse = async (courseId) => {
-      const response = await axios.delete(
+      await axios.delete(
          `${URL}/${course._id}`
        );   
       setCourses(courses.filter((course) => course._id !== courseId));
    };
    const updateCourse = async () => {
-      const response = await axios.put(
+      await axios.put(
          `${URL}/${course._id}`,
          course
        );   
@@ -71,6 +72,7 @@ function Kanbas() {
                      updateCourse={updateCourse} />} />
                   <Route path="Courses" element={<h1>Courses</h1>} />
                   <Route path="Courses/:courseId/*" element={<Courses courses={courses} />} />
+                  <Route path="Signin" element={<Signin />} />
                </Routes>
             </div>
 

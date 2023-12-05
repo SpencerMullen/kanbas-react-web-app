@@ -10,6 +10,8 @@ function Navigation() {
             <div><Link to="/labs/a5/">A5 - NODE + REST + APIs</Link></div>
             <h2>Kanbas</h2>
             <div><Link to="/Kanbas">Kanbas</Link></div>
+            <h2>Project</h2>
+            <div><Link to="/project">Project</Link></div>
         </div>
     );
 }
